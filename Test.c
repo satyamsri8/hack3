@@ -1,11 +1,16 @@
-// Hello World! program
-namespace HelloWorld
+#include<stdio.h>
+
+int main()
 {
-    class Hello {         
-        static void Main(string[] args)
-        {
-            System.Console.WriteLine("Hello World!");
-            System.Console.WriteLine("Hello");
-        }
-    }
+    printf("hELLO World");
+    printf("hELLO World");
+    printf("hELLO World");
+    printf("hELLO World");
+    printf("hELLO World");
+    printf("hELLO World");
+    printf("hELLO World");
+    printf("hELLO World");
+    printf("hELLO World");
+    printf("hELLO World");
+    return 0;
 }
