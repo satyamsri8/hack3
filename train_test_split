@@ -23,11 +23,7 @@ def train_test_split_data(dataset2_labels, dataset2_samples):
                 else:
                     testing_data = np.append(testing_data, np.array([dataset_2[i]]), axis=0)
                 c += 1
-    
-    # Randomly shuffle training and testing data
-    np.random.shuffle(training_data)
-    np.random.shuffle(testing_data)
-    
+ 
     # Separate labels and data
     training_labels = training_data[:, -1]
     training_data = training_data[:, :-1]
