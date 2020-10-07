@@ -7,22 +7,6 @@ def train_test_split_data(dataset2_labels, dataset2_samples):
     # Randomly shuffle the data
     np.random.shuffle(dataset_2)
     print(dataset_2)
-    
-    NoOfSamples = len(dataset_2)
-    print(NoOfSamples)
-    training_data = np.empty([0,3])
-    testing_data = np.empty([0,3])
-    
-    # Split dataset 2 class wise. I have taken 70% data of each class
-    for label in range(4):
-        c = 0
-        for i in range(NoOfSamples):
-            if int(dataset_2[i][2]) == label:
-                if c<3500:
-                    training_data = np.append(training_data, np.array([dataset_2[i]]), axis=0)
-                else:
-                    testing_data = np.append(testing_data, np.array([dataset_2[i]]), axis=0)
-                c += 1
  
     # Separate labels and data
     training_labels = training_data[:, -1]
